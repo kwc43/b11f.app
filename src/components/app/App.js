@@ -10,7 +10,8 @@ import { BrowserRouter as Router,
 
 //Pages
 import HomePage from '../../pages/home/home';
-import NotFoundPage from '../../pages/_shared/error';
+import ErrorPage from '../../pages/_shared/error';
+import DashBoardPage from '../../pages/dashboard/dashboard';
 
 class App extends Component {
   render() {
@@ -18,8 +19,9 @@ class App extends Component {
       <Router>
         <Switch>
           <Route exact path="/" component={HomePage}/>
-          <Router exact path="/404" component={NotFoundPage}/>
-          <Redirect to="/404"/>
+          <Route exact path="/dashboard" component={DashBoardPage}/>
+          <Route exact path="/error" component={ErrorPage}/>
+          <Redirect to="/error"/>
         </Switch>
       </Router>
     );
