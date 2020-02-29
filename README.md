@@ -67,3 +67,9 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 # b11f.app
+
+Remember to run 
+	"npm install" 
+to get all the dependencies currently used in this project 
+
+To check what is currently used, view the "package.json" folder

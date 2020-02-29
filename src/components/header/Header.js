@@ -11,34 +11,25 @@ export default class Header extends Component {
         <div class="container-fluid">
           <div class="navbar-header">
             <Link to="/">
-              <a class="navbar-brand" href="">
-                B1-1F
-              </a>
+              <a class="navbar-brand" href="">B1-1F</a>
             </Link>
-            <div id="navbar navbar-collapse">
-              <ul clas="nav navbar-nav navbar-right">
-                <li>
-                  <Link to="/dashboard">
-                    <a>Dashoard</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="">
-                    <a>About</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="">
-                    <a>Contact</a>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <form class="navbar-form navbar-right">
-              <input class="form-control" type="text" placeholder="Search...">
-              </input>
-            </form>
           </div>
+              <ul class="nav navbar-nav navbar-right">
+                 <li>
+                  <Link to="/dashboard">
+                    Your Dashboard
+                  </Link>
+                </li>
+                <li>
+                 <Link to="/">
+                   About Us
+                 </Link>
+               </li><li>
+                <Link to="/">
+                  Contact Us
+                </Link>
+              </li>
+               </ul>
         </div>
       </nav>
     )
