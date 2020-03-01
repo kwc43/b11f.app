@@ -1,6 +1,7 @@
 import React,  { Component } from 'react';
 import './Carousel.css';
 import Modal from "../modal/Modal.js";
+import Login from "../modal/Login.js"
 
 export default class Header extends Component {
 
@@ -21,9 +22,8 @@ export default class Header extends Component {
   render() {
     return (
       <div>
-        <Modal show={this.state.isOpen}
-          onClose={this.toggleLogInModal}>
-          Modal Content
+        <Modal show={this.state.isOpen}>
+          <Login onClose={this.toggleLogInModal}></Login>
         </Modal>
         <div className="carousel">
           <div className="carousel-inner">
