@@ -6,6 +6,9 @@ export default class Modal extends Component {
       <div className="modal-content">
         <div className="modal-header text-center">
           <h4>Sign up</h4>
+          <button type="button" class="close" onClick={this.props.onClose}>
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
         <div className="modal-body mx-3">
           <div className="md-form mb-5">
