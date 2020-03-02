@@ -46,7 +46,7 @@ export default class Table extends Component {
     const tbodyMarkup = rows.map(tableRows);
 
     return (
-      <div class="table-responsive">
+      <div className="table-responsive">
         <table className="table">
           <thead>{theadMarkup}</thead>
           <tbody>{tbodyMarkup}</tbody>

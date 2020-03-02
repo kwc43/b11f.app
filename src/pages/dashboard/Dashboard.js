@@ -86,34 +86,34 @@ export default class Modal extends Component {
 
   render() {
     return (
-      <div class="container-fluid" style={{padding: '20px'}}>
-        <div class="row">
-            <div class="col-md-8 col-sem-11 col-xs-14">
-                <div class="box">
-                  <div class="box-body">
+      <div className="container-fluid" style={{padding: '20px'}}>
+        <div className="row">
+            <div className="col-md-8 col-sem-11 col-xs-14">
+                <div className="box">
+                  <div className="box-body">
                     <User user={user}/>
                   </div>
                 </div>
-                <div class="box">
-                  <div class="box-header with-border">
+                <div className="box">
+                  <div className="box-header with-border">
                     <h2>Products Table</h2>
                   </div>
-                  <div class="box-body">
+                  <div className="box-body">
                     <Table headings={headings_product} rows={rows_product}/>
                   </div>
                 </div>
             </div>
-            <div class="col-md-4">
-              <div class="box">
-                <div class="box-body">
+            <div className="col-md-4">
+              <div className="box">
+                <div className="box-body">
                   <h2>Graph</h2>
                 </div>
               </div>
-              <div class="box">
-                <div class="box-header with-border">
+              <div className="box">
+                <div className="box-header with-border">
                   <h2>Recent Activities</h2>
                 </div>
-                <div class="box-body">
+                <div className="box-body">
                   <Table headings={headings_activities} rows={rows_activities}/>
                 </div>
               </div>

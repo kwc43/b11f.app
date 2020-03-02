@@ -8,7 +8,7 @@ export default class Modal extends Component {
     }
 
     return (
-      <div className="modal show" tabIndex="-1" style={{backgroundColor: 'rgba(0,0,0,0.3)'}}>
+      <div className="modal" tabIndex="-1" style={{backgroundColor: 'rgba(0,0,0,0.3)'}}>
         <div className="modal-dialog" style={{margin:"150px auto"}}>
               {this.props.children}
         </div>
