@@ -1,0 +1,33 @@
+/*
+ * Box
+ */
+.box {
+    position: relative;
+    border-radius: 3px;
+    background:
+    #ffffff;
+    border: 3px solid #FFFFFF;
+    margin-bottom: 20px;
+    width: 100%;
+    box-shadow: 0 5px 5px
+    rgba(0,0,0,0.1);
+}
+
+.box-header {
+    color: #444;
+    display: block;
+    padding: 10px;
+    position: relative;
+}
+
+.with-border{
+  border-bottom: 1px solid #D3D3D3;
+}
+
+.box-body {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: 10px;
+}

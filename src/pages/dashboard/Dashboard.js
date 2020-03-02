@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import './Dashboard.css';
 import Table from "../../components/table/Table.js"
+import Box from "../../components/box/Box.js"
 import User from "../../components/userBox/User.js"
 
 const headings_product = [
@@ -89,34 +90,20 @@ export default class Modal extends Component {
       <div className="container-fluid" style={{padding: '20px'}}>
         <div className="row">
             <div className="col-md-8 col-sem-11 col-xs-14">
-                <div className="box">
-                  <div className="box-body">
-                    <User user={user}/>
-                  </div>
-                </div>
-                <div className="box">
-                  <div className="box-header with-border">
-                    <h2>Products Table</h2>
-                  </div>
-                  <div className="box-body">
-                    <Table headings={headings_product} rows={rows_product}/>
-                  </div>
-                </div>
+              <Box>
+                <User user={user}/>
+              </Box>
+              <Box header={"Products Table"}>
+                <Table headings={headings_product} rows={rows_product}/>
+              </Box>
             </div>
             <div className="col-md-4">
-              <div className="box">
-                <div className="box-body">
-                  <h2>Graph</h2>
-                </div>
-              </div>
-              <div className="box">
-                <div className="box-header with-border">
-                  <h2>Recent Activities</h2>
-                </div>
-                <div className="box-body">
-                  <Table headings={headings_activities} rows={rows_activities}/>
-                </div>
-              </div>
+              <Box>
+                <h2>Graph goes here</h2>
+              </Box>
+              <Box header={"Recent Activities"}>
+                <Table headings={headings_activities} rows={rows_activities}/>
+              </Box>
             </div>
         </div>
       </div>
