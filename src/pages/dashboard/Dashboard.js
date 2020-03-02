@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Component} from "react";
 import './Dashboard.css';
 import Table from "../../components/table/Table.js"
 import User from "../../components/userBox/User.js"
@@ -75,7 +75,16 @@ const user = {
   image: 'https://www.nationalgeographic.com/content/dam/environment/photos/future_of_food/organic_farming_rough/01_organic_farming_i8860_20181003_11260.adapt.1900.1.jpg'
 }
 
-const DashBoardPage = () => {
+export default class Modal extends Component {
+  componentDidMount(){
+    document.body.style.paddingTop="50px";
+  }
+
+  componentWillUnmount(){
+    document.body.style.paddingTop="0px";
+  }
+
+  render() {
     return (
       <div class="container-fluid" style={{padding: '20px'}}>
         <div class="row">
@@ -112,6 +121,5 @@ const DashBoardPage = () => {
         </div>
       </div>
     );
+  }
 }
-
-export default DashBoardPage;
