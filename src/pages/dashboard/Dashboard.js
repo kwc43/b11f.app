@@ -1,6 +1,7 @@
 import React from "react";
 import './Dashboard.css';
 import Table from "../../components/table/Table.js"
+import User from "../../components/userBox/User.js"
 
 const headings_product = [
       'Product name',
@@ -69,6 +70,11 @@ const rows_activities = [
     ],
 ];
 
+const user = {
+  name: 'Farm A',
+  image: 'https://www.nationalgeographic.com/content/dam/environment/photos/future_of_food/organic_farming_rough/01_organic_farming_i8860_20181003_11260.adapt.1900.1.jpg'
+}
+
 const DashBoardPage = () => {
     return (
       <div class="container-fluid" style={{padding: '20px'}}>
@@ -76,7 +82,7 @@ const DashBoardPage = () => {
             <div class="col-md-8 col-sem-11 col-xs-14">
                 <div class="box">
                   <div class="box-body">
-                    <h2>User Summary</h2>
+                    <User user={user}/>
                   </div>
                 </div>
                 <div class="box">
