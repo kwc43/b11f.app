@@ -2,10 +2,6 @@ import React, {Component} from "react";
 import "./Box.css";
 
 export default class Box extends Component{
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const hasHeader = this.props.header;
     let header;

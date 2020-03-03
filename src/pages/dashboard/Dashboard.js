@@ -77,14 +77,18 @@ const user = {
 }
 
 export default class Modal extends Component {
+
+  state = {
+    test: []
+  }
+
   componentDidMount(){
     document.body.style.paddingTop="50px";
-    //TODO change this and put it in more centralised location
-    //Don't want it to be hardcoded either, can be injected into app config in future
-    fetch('http://localhost:3000/invoke')
+    fetch('http://localhost:3001/invoke')
     .then(res=>res.json())
     .then((data)=>{
-      console.log(data)
+	     this.setState({test : data})
+       console.log(this.state.test  )
     })
     .catch(console.log)
   }
